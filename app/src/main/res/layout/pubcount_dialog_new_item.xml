@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/allItemsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin" />
+
+    <CheckBox
+        android:id="@+id/createNewItemcheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create new item?" />
+
+    <EditText
+        android:id="@+id/pubcountItemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:layout_marginTop="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/pubcount_list_item_name">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pubcountItemPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/pubcount_list_price"
+        android:inputType="numberDecimal" />
+
+</LinearLayout>

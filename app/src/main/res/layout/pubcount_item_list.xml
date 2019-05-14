@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/pubcount_item_list_margin"
+    android:background="#5A93CC">
+
+    <TextView
+        android:id="@+id/pubcountItemCount"
+        android:layout_margin="@dimen/activity_word_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pubcountItemName"
+        android:text="@string/pubcount_list_item_count" />
+
+    <TextView
+        android:id="@+id/pubcountItemName"
+        android:layout_margin="@dimen/activity_word_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/pubcount_list_item_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/pubcountItemButton"
+        android:layout_margin="@dimen/activity_word_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_btn"
+        android:minWidth="48dip" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pubcountItemButton"
+        android:layout_toLeftOf="@+id/pubcountItemButton"
+        android:text="TextView" />
+
+</RelativeLayout>
